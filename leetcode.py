@@ -505,18 +505,3 @@
 # print(sumli)
 
 #Best time to buy and sell the stock.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
