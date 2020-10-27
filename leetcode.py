@@ -505,3 +505,10 @@
 # print(sumli)
 
 #Best time to buy and sell the stock.
+
+n=45
+prod=1
+if(prod<n):
+    
+else:
+    print("False")
