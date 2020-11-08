@@ -506,9 +506,41 @@
 
 #Best time to buy and sell the stock.
 
-n=45
-prod=1
-if(prod<n):
+# n=45
+# prod=1
+# if(prod<n):
     
-else:
-    print("False")
+# else:
+#     print("False")
+
+
+# li=[1,2,2,5,1,2,2]
+# for i in li:
+#     if(li.count(i)==1):
+#         print(i)
+
+# from itertools import permutations 
+# str1="abc"
+# perli1=[]
+# perli=permutations(str1)
+# for perm in list(perli): 
+#          perli1.append(''.join(perm))
+#         #  print(perm)
+# print(perli1)
+# import math
+# li=[1,3,5,7,9]
+# sumli=[]
+# # print(math.floor(len(li)/2))
+# lili=[]
+# for i in range(0,math.floor(len(li)/2)):
+#     # lili=li[i:i+4]
+#     sumli.append(sum(li[i:i+4]))
+# print(sumli)
+str1="12251223214321"
+numli=[int(x) for x in str1]
+unli=[]
+for i in numli:
+    if(numli.count(i)==1):
+        unli.append(i)
+print(unli)
+
