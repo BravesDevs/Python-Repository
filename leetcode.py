@@ -536,11 +536,161 @@
 #     # lili=li[i:i+4]
 #     sumli.append(sum(li[i:i+4]))
 # print(sumli)
-str1="12251223214321"
-numli=[int(x) for x in str1]
-unli=[]
-for i in numli:
-    if(numli.count(i)==1):
-        unli.append(i)
-print(unli)
+# str1="12251223214321"
+# numli=[int(x) for x in str1]
+# unli=[]
+# for i in numli:
+#     if(numli.count(i)==1):
+#         unli.append(i)
+# print(unli)
+
+# li1=[1,2,4,5]
+# li2=[2,2,4,4,5,4]
+# # li2.remove(2)
+# # print(li2)
+# myli=[]
+# mydict={}
+# for i in li1:
+#     if(i in li2):
+#         # myli.append(li2.index(i))
+#         mydict[i]=li2.index(i)
+#         # li2.remove(i)
+# print(mydict)
+
+
+
+# from collections import Counter
+# #TODO: Implement the code using list only(Naive Implementation)
+# purchase=[[6,55],[6,45],[6,55],[4,40],[18,60],[10,50]]
+# items=[2, 3, 4, 5, 6, 8, 7, 6, 5, 18]
+# earn=0
+# # for i in purchase:
+# #     if (i[0] in items):
+# #         earn+=i[1]
+# #         items.remove(i[0])
+# # print(earn)
+# #TODO: Implement Counter on list
+# #TODO: Summation of the purchases
+# cntdict = Counter(items)
+# # cntdict=dict(cntdict)
+# # print(cntdict[2])
+# # print(cntdict)
+# for i in purchase:
+#     if(i[0] in cntdict.keys()):
+#         if(cntdict[i[0]]!=0):
+#             earn+=i[1]
+#             cntdict[i[0]]-=1
+# print(earn)
+
+
+#TODO: input:[1,2,3,4], output:[24,12,8,6]
+# a=[1,2,3,4]
+# prodli1=[]
+# prod=1
+# for i in range(0,len(a)):
+#     b=[a[i]]
+#     prodli=[x for x in a if not x in b or b.remove(x)]
+#     # print(prodli)
+#     for i in prodli:
+#         prod*=i
+#     prodli1.append(prod)
+#     prod=1  
+# print(prodli1) 
+
+#TODO:In O(N)
+# a=[1,2,3,4]
+# prodli=[]
+# prod=1
+# for i in a:
+#     prod*=i
+# for i in a:
+#     prodli.append(prod//i)
+# print(prodli)
+
+
+
+# li1=[1,2,3,4]
+# for i in range(0,len(li1)):
+#     li2=list(li1[i])
+#     myli=li_dif = [k for k in li1 + li2 if k not in li1 or k not in li2]
+#     print(myli)
+
+# pt='abba'
+# st='dog dog dog dog'
+
+# pt=[x for x in pt]
+# print(pt)
+# st=st.split()
+# print(st)
+# pt=set(pt)
+# st=set(st)
+
+# if(len(pt)==len(st)):
+#     print("True")
+# else:
+#     print("False")
+
+# p=['a','b','b','a']
+# s=['dog','cat','cat','dog']
+# inputli=['dog','cat','cat']
+# correctli=[]
+# itemdict={}
+# #TODO: Appending the Key as pattern list element and Value as a string list element
+# for (i,j) in zip(p,s):
+#     itemdict[i]=j   
+# #TODO: Building a Correct List from the pattern given
+# for i in p:
+#     correctli.append(itemdict[i])
+# #TODO: Comparing the correct list with the input list
+# if(correctli==inputli):
+#     print("True")
+# else:
+#     print("False")
+
+# def revbin(s):
+#     s=s[::-1]
+    
+
+# num=int()
+# intli=[str(x) for x in num]
+# print(intli)
+# def bin2dec(s):
+#     summ=0
+#     numli=[x for x in s]
+#     for i in range(0,len(numli)):
+#         if(numli[i]=='1'):
+#             summ+=2**i
+#     return summ
+
+# print(bin2dec(num[::-1]))
+# for i in num:
+# num=num[::-1]
+# print(num)
+
+# import math
+# print(math.factorial(5))
+# n=19
+# n=str(n).split()
+# print(n)
+# sumt=0
+
+##Divide 2 integers
+
+# n1,n2=int(input("Enter N1:")),int(input("Enter N2:"))
+
+# def divide(n1,n2):
+#     if(n2!=0):
+#         return int(n1/n2)
+
+# print(divide(n1,n2))
+
+# def divide(n1: int, n2: int) -> int:
+#     if(n2!=0 and n1!=-2147483648):
+#         return int(n1/n2)
+#     elif(n1=-2147483648 and n2=1):
+#         return -2147483647
+#     elif(n1==-2147483648 and n2==-1):
+#         return 2147483647
+
+# print(divide(-2147483648,-1))
 

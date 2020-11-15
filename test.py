@@ -15,8 +15,8 @@
 
 # print(cnt)
 
-strn='(]'
-symli=[x for x in strn]
+# strn='(]'
+# symli=[x for x in strn]
 
                 
 # cnt=0
@@ -34,7 +34,7 @@ symli=[x for x in strn]
 # else:
 #     print("Valid")
 
-
+    
 
 
 
