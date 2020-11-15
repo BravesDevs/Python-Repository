@@ -684,13 +684,4 @@
 
 # print(divide(n1,n2))
 
-# def divide(n1: int, n2: int) -> int:
-#     if(n2!=0 and n1!=-2147483648):
-#         return int(n1/n2)
-#     elif(n1=-2147483648 and n2=1):
-#         return -2147483647
-#     elif(n1==-2147483648 and n2==-1):
-#         return 2147483647
-
-# print(divide(-2147483648,-1))
 
