@@ -673,15 +673,3 @@
 # n=str(n).split()
 # print(n)
 # sumt=0
-
-##Divide 2 integers
-
-# n1,n2=int(input("Enter N1:")),int(input("Enter N2:"))
-
-# def divide(n1,n2):
-#     if(n2!=0):
-#         return int(n1/n2)
-
-# print(divide(n1,n2))
-
-
