@@ -673,3 +673,168 @@
 # n=str(n).split()
 # print(n)
 # sumt=0
+
+# import math
+# def sqroot(x:int)->int:
+#     return int(math.sqrt(x))
+
+# print(sqroot(8))
+
+# Length of the last word
+
+# s="Hello World"
+# s=s.replace(" ","")
+# print(len(s))
+# strli=s.split()
+# print(len(strli[-1]))
+
+# s=" "
+# if(len(s.replace(" ",""))>=1):
+#     print(len(s.split()[-1]))
+# else:
+#     print("So I'm useless as I'm being checked at empty")
+
+# num1="123"
+# num2="456"
+# num3=str(int(num1)*int(num2))
+# print(num3)
+
+# nums=[1,3,5,6]
+# target=2
+# if(target not in nums):
+#     nums.append(target)
+#     nums.sort()
+#     print(nums.index(target))
+# else :
+#     nums.sort()
+#     print(nums.index(target))
+# print(nums.index(target))
+
+#House Robber
+# li1=[1,2,3,1]
+# for i in range(0,len(li1),2):
+#     print(li1[i])
+
+# s="ad"
+# t="aa"
+# checkli=[]
+# worddict={}
+# if(len(set(s))!=len(set(t))):
+#     print("False") 
+# else:
+#     for i in zip(s,t):
+#         worddict[i[0]]=i[1]
+#     for i in zip(s,t):
+#         if(worddict[i[0]]!=i[1]):
+#             checkli.append("False")
+#         else: 
+#             checkli.append("True")
+
+#     if("False" in checkli):
+#         print("False")
+#     else:
+#         print("True")
+
+#power of two
+
+# tar=0
+# power=-101101
+# k=0
+# while(power<=tar):
+#     power=2**k
+#     k+=1
+
+# if(power==tar):
+#     print("True")  
+# else:
+#     print("False")
+
+# import statistics
+# li=[3,2,3]
+# print(statistics.mode(li))
+
+# from collections import Counter
+# li=[2,2,1,1,1,2,2]
+# cnt=0
+# mode=0
+# for i in li:
+#     if(li.count(i)>cnt):
+#         mode=i
+#         cnt=li.count(i)
+#     else:
+#         pass
+# print(mode)
+
+
+# li=[5,4,3,2,1,11,10,14,13,12,9]
+# li.sort()
+# lili=[]
+# for i in range(0,len(li)-1):
+#     if((li[i]-li[i+1]!=1 or li[i]-li[i+1]!=1) and i !=len(li)):
+
+
+# li=[1,2,3,4,5,9,10,11,12,13,14]
+# #[1,2,3,4,5,8,9]
+# li.sort()
+# lenli=[]
+# k=0
+# ptr=0
+# i=0
+
+# for i in range(1,len(li)):
+#     if(li[i]-li[i-1]!=1 and i!=len(li)):
+#         lenli.append(i-ptr)
+#         ptr=i
+# print(lenli)
+
+# Python3 program to find longest 
+# contiguous subsequence 
+
+# def findLongestConseqSubseq(arr):
+# 	ans = 0
+#     n=len(arr)
+# 	count = 0 
+# 	arr.sort()
+# 	v = []
+# 	v.append(arr[0])
+# 	for i in range(1, n):
+# 		if (arr[i] != arr[i - 1]):
+# 			v.append(arr[i]) 
+# 	for i in range(len(v)): 
+# 		if (i > 0 and v[i] == v[i - 1] + 1):
+# 			count += 1 
+# 		else:
+# 			count = 1 
+# 		ans = max(ans, count)
+# 	return ans 
+# arr = [1,2,3,4,5,9,10,11,12,13,14]
+# findLongestConseqSubseq(arr)
+
+# str1="08:05:45 PM"
+# def timeConversion(str1):
+#     if (str1[-2:]=="AM" and str1[:2]=="12"):
+#         return("00"+str1[2:-2])
+#     elif(str1[-2:]=="AM"):
+#         return(str1[:-2])
+#     elif(str1[-2:]=="PM" and str1[:2]=="12"):
+#         return(str1[:-2])
+#     else:
+#         return(str(int(str1[:2])+12)+str1[2:8])
+# print(timeConversion(str1))
+
+
+# matrix=[[1,2,3],[4,5,6],[7,8,9]]
+# v=3
+# for i,x in enumerate(matrix):
+#     if(v in x):
+#         print(tuple(i,x.index(v)))
+
+def summ(*args,**kwargs):
+    li=list(args)
+    sum1=0
+    for i in li:
+        sum1+=i//12
+    return sum1
+
+feets=summ(18,21,33,43,51)
+print(feets)
