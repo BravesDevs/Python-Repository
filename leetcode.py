@@ -829,12 +829,13 @@
 #     if(v in x):
 #         print(tuple(i,x.index(v)))
 
-def summ(*args,**kwargs):
-    li=list(args)
-    sum1=0
-    for i in li:
-        sum1+=i//12
-    return sum1
+#Working of args and kwargs
+# def summ(*args,**kwargs):
+#     li=list(args)
+#     sum1=0
+#     for i in li:
+#         sum1+=i//12
+#     return sum1
 
-feets=summ(18,21,33,43,51)
-print(feets)
+# feets=summ(18,21,33,43,51)
+# print(feets)
