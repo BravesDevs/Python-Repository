@@ -320,7 +320,6 @@
     #         if i not in nums:
     #             return i
 
-
 # num=2.00000
 # n=0
 # prod=1
@@ -457,13 +456,14 @@
 
 # print(dp[n])
 
-#Climbing stairs
+# Climbing stairs
+# TODO: implement a climbing stairs
 # def stairs(n:int)->int:
 #     dp=[]
 #     for i in range(0,n+1):
 #         dp.append(0)
 #     dp[0],dp[1]=1,1
-#     for i in range(2,n+1):
+#     for i in range(2,n+):
 #         dp[i]=dp[i-1]+dp[i-2]
 #     return dp[n]
 # print(stairs(3))
@@ -736,7 +736,6 @@
 #         print("True")
 
 #power of two
-
 # tar=0
 # power=-101101
 # k=0
@@ -839,3 +838,163 @@
 
 # feets=summ(18,21,33,43,51)
 # print(feets)
+
+# li1=[5,6,22,25,1,-1,8,10]
+# li2=[1,6,-1,10]
+# li1=[x for x in li1 if x in li2]
+# if(li1==li2):
+#     print("True")
+# else:
+#     print("False")
+
+
+# s = "axc"
+# t = "ahbgdc"
+
+# t=[x for x in t]
+# s=[x for x in s]
+# t=[x for x in t if x in s]
+# if(s==t):
+#     print("True")
+# else:
+#     print("False")
+
+# s = "axc"
+# t = "ahbgdc"
+# count = 0
+# for i in t:
+#     if count == len(s):
+#         print("True") 
+#     if i == s[count]:
+#         count += 1
+# print(len(s) == count)
+
+# li1=[5,1,22,25,6,-1,8,10]
+# li2=[1,6,-1,10]
+# count=0
+# for i in li1:
+#     if(count==len(li2)):
+#         print("True")
+#     if(i==li2[count]):
+#         count+=1
+# print(count==len(li2))
+
+#TODO: Two Sum
+
+# nums=[3,2,3]
+# target=6
+# solution=[]
+# for i in range (0,len(nums)-1):
+#     # if(len(nums)==2 and nums[i]nums[i+1]==target):
+#     #     solution.append([0,1])
+
+#     if(target-nums[i] in nums[i+1:]):
+#         if(target - nums[i]!=nums[i]):
+#             sol=[]
+#             sol.append(nums.index(nums[i]))
+#             sol.append(nums.index(target-nums[i]))
+#             solution.append(sol)
+#         else:
+#             sol=[]
+#             x=target-nums[i]
+#             sol.append(nums.index(nums[i]))
+#             nums[i]=-1
+#             sol.append(nums.index(x))
+#             solution.append(sol)
+# print(solution[0])
+
+#TODO: Two SUM Another One Runtime(48 ms) O(n^2)
+# nums=[3,2,3]
+# target=6
+# n=len(nums)
+# for i in range(0,n-1):
+#         for j in range(i+1, n):
+#             if((nums[i]+nums[j])==target):
+#                 print(list((i,j))) 
+
+#TODO: Create a maximum Number Leetcode(321)
+# nums1 = [3, 4, 6, 5]
+# nums2 = [9, 1, 2, 5, 8, 3]
+# k = 5
+# nums1 = nums1 + nums2
+# # nums1.sort(reverse=True)
+# nums1=list(set(nums1))
+# nums
+
+#TODO: Top K Frequent Elements
+# nums = [1,1,1,2,2,3]
+# # nums1=list(set(nums))
+# k = 2
+# # countli=[]
+# soli={}
+# # nums1=list(set(nums))
+# # print(nums1)
+# for i in list(set(nums)):
+#     # countli.append(nums.count(i))
+#     soli[i]=nums.count(i)
+# # print(countli[:k])
+# soli=dict(sorted(soli.items(), key=lambda item: item[1],reverse=True))
+# # print(soli)
+# soln=[]
+# for i in soli.keys():
+#     soln.append(i)
+# print(soln[:k])   
+
+#TODO:19. Remove Nth Node From End of List
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+# class Solution:
+#     def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
+#         tmp = head
+#         numnodes = 0
+#         while(tmp is not None):
+#             numnodes += 1
+#             tmp = tmp.next
+#         k = numnodes - n
+#         prev = None
+#         ptr = head
+#         while k!=0:
+#             prev = ptr
+#             ptr = ptr.next
+#             k-=1
+#         if(prev is None):
+#             return head.next
+#         else:
+#             prev.next = ptr.next
+#             ptr.next = None
+#             return head
+
+#TODO:21.Merge Two Sorted Lists
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+# class Solution(object):
+#     def mergeTwoLists(self, l1, l2):
+#         # list to return
+#         head = ListNode(0)
+#         ptr = head
+#         while True:
+#             if l1 is None and l2 is None:
+#                 break
+#             elif l1 is None:
+#                 ptr.next = l2
+#                 break
+#             elif l2 is None:
+#                 ptr.next = l1
+#                 break
+#             else:
+#                 smallerVal = 0
+#                 if l1.val < l2.val:
+#                     smallerVal = l1.val
+#                     l1 = l1.next
+#                 else:
+#                     smallerVal = l2.val
+#                     l2 = l2.next
+#                 newNode = ListNode(smallerVal)
+#                 ptr.next = newNode
+#                 ptr = ptr.next
+#         return head.next
