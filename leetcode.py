@@ -998,3 +998,5 @@
 #                 ptr.next = newNode
 #                 ptr = ptr.next
 #         return head.next
+
+#TODO: 24 Swap Nodes in Pairs
