@@ -999,4 +999,44 @@
 #                 ptr = ptr.next
 #         return head.next
 
-#TODO: 24 Swap Nodes in Pairs
+#TODO: 274. H-Index.
+# According to the definition of h-index on Wikipedia: 
+# "A scientist has index h if h of his/her N papers have at least h citations each, and the other N − h papers have no more than h citations each."
+# citations = [1]
+# citations.sort()
+# if(len(citations)==1 and (citations[0]==0 or citations[0]==1)):
+#     print(citations[0])
+# # print(citations)
+# else:
+#     if(0 in citations):
+#         citations.remove(0)
+#     # print(citations)
+#     sol=[]
+#     for i in citations:
+#         if(len(citations)>i):
+#             for j in range(citations.index(i),i):
+#                 if(citations[j]>=i):
+#                     sol.append(i)
+#                     break
+#         else:
+#             sol.append(0)
+#     print(max(sol))
+
+# buzzed = ["Fizz","Buzz"]
+# n=15
+# t=0
+# # print(buzzed[not t])
+# arr=["1","2"]
+# for i in range(3,n+1):
+#     if(n%i==0):
+#         arr.append(buzzed[t])
+#         t = not t
+#     else:
+#         arr.append(str(i))
+# print(arr)
+
+# accounts = [[0,0,0,-1,-1,-1],[0,-1,1],[0,0,0],[0,0,0],[2,-1,-1],[0,0,0],[0,0,0],[0,1,0]]
+# for i in range(len(accounts)):
+#     accounts[i]=sum(accounts[i])
+# print(max(accounts))
+
