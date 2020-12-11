@@ -1040,3 +1040,47 @@
 #     accounts[i]=sum(accounts[i])
 # print(max(accounts))
 
+# candies = [2,3,5,1,3]
+# extraCandies = 3
+# # soln=['true' if(i+extraCandies >= max(candies)) else 'false' for i in candies]
+# for i in candies:
+#     if(i+extraCandies >=max(candies)):
+#         soln.append('true')
+#     else:
+#         soln.append('false')
+
+# print(soln)
+
+#TODO: 219 Contains Duplicate II
+# nums = [1,2,2,1]
+# k = 3
+# for i in range(0,len(nums)-1):
+#     for j in range(i+1,len(nums)):
+#         if(nums[i]==nums[j]):
+#             if(abs(i-j)<=k):
+#                 print("True")
+
+# print("False")
+
+# strings=["arjitsinghpagalworld","sunidhipagalworld","bravesdevspagalworld.com"]
+# newli=[]
+# pagalist=["pagalworld","pagalworld.io","pagalworld.com","pagalworldwap.com",'.io','.com']
+# for i in strings:
+#     print(i.index("pagal"))
+    # for x in pagalist:
+    #     if(x in i):
+    #         z=i.replace(x,"")
+    #         newli.append(z.replace(" ",""))
+    #         # print(x)
+# print(newli)
+
+# strings=["arjitsinghpagalworld.ae","sunidhipagalworld.io","bravesdevspagalworld.com","bravesdevsfreemusic.com"]
+# newli=[]
+# pagalist=["pagalworld","wapindia","jaatpunjabi","freemusic"]
+# for i in strings:
+#     for x in pagalist:
+#         if(x in i):
+#             z=i.replace(i[i.index(x):],"")
+#             newli.append(z)
+# print(list(set(newli)))
+
