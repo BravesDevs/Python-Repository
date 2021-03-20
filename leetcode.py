@@ -1185,3 +1185,10 @@
 #         numli=[int(x) for x in  num]
 #         listnums.append(numli)
 # return listnums 
+
+
+#Add Binary
+a=int(input())
+b=int(input())
+sumbin=bin(int(a,2) + int(b,2))
+print(sumbin[2:])
