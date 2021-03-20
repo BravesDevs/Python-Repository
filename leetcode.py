@@ -1083,4 +1083,105 @@
 #             z=i.replace(i[i.index(x):],"")
 #             newli.append(z)
 # print(list(set(newli)))
+# import math
+# year=1905
+# print(math.ceil(year/100))
+# num1=1905
+# num1li=[x for x in str(num1)]
+# endstr=""
+# firststr=""
+# for i in num1li[:2]:
+#     firststr+=i
+# # print(num1li[:2])
+# for i in num1li[-2:]:
+#     endstr+=i
+# if(int(endstr)>0):
+#     print(int(firststr)+1) 
+# else:
+#     print(int(firststr))
 
+
+# inputArray = [-23, 4, -3, 8, -12]
+# temp=-1000000
+# for i in range(len(inputArray)-1):
+#     prod=inputArray[i]*inputArray[i+1]
+#     if(prod>temp):
+#         temp=prod
+# print(temp)
+
+# a=[1,-1,0]
+# k=0
+# summ=0
+# if(len(a)==1):
+#     print("0")
+# else:
+#     for i in range(len(a)-1):
+#         if((a[i]==k or a[i+1]==k) or (a[i]+a[i+1]==k)):
+#             summ+=1
+#     print(summ) 
+
+
+# nums=[1,3,1]
+# pairsli=[]
+# distli=[]
+# for i in range(0,len(nums)-1):
+#     for j in range(i+1,len(nums)):
+#         pairsli.append([nums[i],nums[j]])
+
+# for i in range(0,len(pairsli)):
+#     for j in range(0,len(pairsli[i])-1):
+#         distli.append(abs(pairsli[i][j]-pairsli[i][j+1]))
+    
+# print(min(distli))
+
+#Missing Number
+# nums = [3,0,1]
+# print(sum(range(0,len(nums)+1))-sum(nums))
+
+#Factorial Trailing Zeros
+# import math
+# count=0
+# numsarr= [x for x in str(math.factorial(7))]
+# for i in numsarr[::-1]:
+#     if(i=='0'):
+#         count+=1
+#     else:
+#         break
+# print(count)
+# # print(numsarr)
+
+#pow(x,n)
+# import math
+# print(round(math.pow(2.00000,10),5))
+
+#superpow
+# li=[4,3,3,8,5,2]
+# res = int("".join(map(str, li))) 
+# print(1**res%1337)
+
+# nums = [4,5,6,7,0,1,2] 
+# target = 0
+# if (target in nums):
+#     print(nums.index(target))
+# else:
+#     print(-1)
+
+# def fib(n):
+#     if(n<=1):
+#         return 1
+#     return fib(n-1)+fib(n-2)
+
+# print(fib(2))
+
+#PASCAL TRIANGLE:
+# numRows=6
+# listnums=[[1]]
+# if(numRows<=1):
+#     return listnums
+# else:
+#     for i in range(1,numRows):
+#         num=11**i
+#         num=str(num)
+#         numli=[int(x) for x in  num]
+#         listnums.append(numli)
+# return listnums 
