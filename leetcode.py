@@ -1188,7 +1188,7 @@
 
 
 #Add Binary
-a=int(input())
-b=int(input())
-sumbin=bin(int(a,2) + int(b,2))
-print(sumbin[2:])
+# a=int(input())
+# b=int(input())
+# sumbin=bin(int(a,2) + int(b,2))
+# print(sumbin[2:])
