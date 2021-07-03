@@ -1,4 +1,5 @@
 {
     "python.pythonPath": "C:\\Users\\Devs\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
-    "python.linting.enabled": false
+    "python.linting.enabled": false,
+    "python.formatting.provider": "yapf"
 }

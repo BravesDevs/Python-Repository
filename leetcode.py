@@ -28,7 +28,7 @@
 # 		lst2.sort()
 # 		if(lst1==lst2):
 # 			return True
-# 		else: 
+# 		else:
 # 			return False
 
 # print(anagram("car","nagaram"))
@@ -194,7 +194,7 @@
 # c=a-b
 # print(c)
 
-# A = [[1, 4, 5], 
+# A = [[1, 4, 5],
 #     [-5, 8, 9],
 #     [-6, 7, 11]]
 
@@ -220,12 +220,12 @@
 #             k-=1
 #         else:
 #             my_matrix[i][j]='0'
-        
+
 # x=DataFrame(my_matrix)
 # x.style.hide_index()
 # print(x)
 
-#left rotation
+# left rotation
 # import time
 
 # a=[1,2,3,4,5]
@@ -238,7 +238,7 @@
 # print(li1)
 
 
-#Compare triplets
+# Compare triplets
 # # a=[5,6,7]
 # b=[3,6,10]
 # alice=0
@@ -254,7 +254,7 @@
 
 # print(alice,"",bob)
 
-#Diag Difference
+# Diag Difference
 # import time
 # a=[[11,21,1,1,4,41,1,1,5,6],[11,21,1,1,4,41,1,1,5,6],[11,21,1,1,4,41,1,1,5,6],[11,21,1,1,4,41,1,1,5,6],[11,21,1,1,4,41,1,1,5,6],[11,21,1,1,4,41,1,1,5,6],[11,21,1,1,4,41,1,1,5,6],[11,21,1,1,4,41,1,1,5,6],[11,21,1,1,4,41,1,1,5,6],[11,21,1,1,4,41,1,1,5,6]]
 # sum1=0
@@ -315,10 +315,10 @@
 #         nums[i]=nums[i]
 
 
-    # def firstMissingPositive(self, nums: List[int]) -> int:
-    #     for i in range(1,1000):
-    #         if i not in nums:
-    #             return i
+#     def firstMissingPositive(self, nums: List[int]) -> int:
+#         for i in range(1,1000):
+#             if i not in nums:
+#                 return i
 
 # num=2.00000
 # n=0
@@ -326,7 +326,7 @@
 # if(n>0):
 #     for i in range(1,n+1):
 #         prod*=num
-#     print(format(prod,'.5f'))    
+#     print(format(prod,'.5f'))
 # elif(n<0):
 #     for i in range(0,abs(n)):
 #         prod*=num
@@ -445,7 +445,7 @@
 # for i in range(2,6):
 #     fibli[i]=fibli[i-2]+fibli[i-1]
 
-#Climbing Stairs Dynamic Programming
+# Climbing Stairs Dynamic Programming
 # n=3
 # dp=[None]*6
 # dp[0]=1
@@ -504,12 +504,12 @@
 #         sumli.append(sum1)
 # print(sumli)
 
-#Best time to buy and sell the stock.
+# Best time to buy and sell the stock.
 
 # n=45
 # prod=1
 # if(prod<n):
-    
+
 # else:
 #     print("False")
 
@@ -519,11 +519,11 @@
 #     if(li.count(i)==1):
 #         print(i)
 
-# from itertools import permutations 
+# from itertools import permutations
 # str1="abc"
 # perli1=[]
 # perli=permutations(str1)
-# for perm in list(perli): 
+# for perm in list(perli):
 #          perli1.append(''.join(perm))
 #         #  print(perm)
 # print(perli1)
@@ -583,7 +583,7 @@
 # print(earn)
 
 
-#TODO: input:[1,2,3,4], output:[24,12,8,6]
+# TODO: input:[1,2,3,4], output:[24,12,8,6]
 # a=[1,2,3,4]
 # prodli1=[]
 # prod=1
@@ -594,10 +594,10 @@
 #     for i in prodli:
 #         prod*=i
 #     prodli1.append(prod)
-#     prod=1  
-# print(prodli1) 
+#     prod=1
+# print(prodli1)
 
-#TODO:In O(N)
+# TODO:In O(N)
 # a=[1,2,3,4]
 # prodli=[]
 # prod=1
@@ -637,7 +637,7 @@
 # itemdict={}
 # #TODO: Appending the Key as pattern list element and Value as a string list element
 # for (i,j) in zip(p,s):
-#     itemdict[i]=j   
+#     itemdict[i]=j
 # #TODO: Building a Correct List from the pattern given
 # for i in p:
 #     correctli.append(itemdict[i])
@@ -649,7 +649,7 @@
 
 # def revbin(s):
 #     s=s[::-1]
-    
+
 
 # num=int()
 # intli=[str(x) for x in num]
@@ -710,7 +710,7 @@
 #     print(nums.index(target))
 # print(nums.index(target))
 
-#House Robber
+# House Robber
 # li1=[1,2,3,1]
 # for i in range(0,len(li1),2):
 #     print(li1[i])
@@ -720,14 +720,14 @@
 # checkli=[]
 # worddict={}
 # if(len(set(s))!=len(set(t))):
-#     print("False") 
+#     print("False")
 # else:
 #     for i in zip(s,t):
 #         worddict[i[0]]=i[1]
 #     for i in zip(s,t):
 #         if(worddict[i[0]]!=i[1]):
 #             checkli.append("False")
-#         else: 
+#         else:
 #             checkli.append("True")
 
 #     if("False" in checkli):
@@ -735,7 +735,7 @@
 #     else:
 #         print("True")
 
-#power of two
+# power of two
 # tar=0
 # power=-101101
 # k=0
@@ -744,7 +744,7 @@
 #     k+=1
 
 # if(power==tar):
-#     print("True")  
+#     print("True")
 # else:
 #     print("False")
 
@@ -786,26 +786,26 @@
 #         ptr=i
 # print(lenli)
 
-# Python3 program to find longest 
-# contiguous subsequence 
+# Python3 program to find longest
+# contiguous subsequence
 
 # def findLongestConseqSubseq(arr):
 # 	ans = 0
 #     n=len(arr)
-# 	count = 0 
+# 	count = 0
 # 	arr.sort()
 # 	v = []
 # 	v.append(arr[0])
 # 	for i in range(1, n):
 # 		if (arr[i] != arr[i - 1]):
-# 			v.append(arr[i]) 
-# 	for i in range(len(v)): 
+# 			v.append(arr[i])
+# 	for i in range(len(v)):
 # 		if (i > 0 and v[i] == v[i - 1] + 1):
-# 			count += 1 
+# 			count += 1
 # 		else:
-# 			count = 1 
+# 			count = 1
 # 		ans = max(ans, count)
-# 	return ans 
+# 	return ans
 # arr = [1,2,3,4,5,9,10,11,12,13,14]
 # findLongestConseqSubseq(arr)
 
@@ -828,7 +828,7 @@
 #     if(v in x):
 #         print(tuple(i,x.index(v)))
 
-#Working of args and kwargs
+# Working of args and kwargs
 # def summ(*args,**kwargs):
 #     li=list(args)
 #     sum1=0
@@ -864,7 +864,7 @@
 # count = 0
 # for i in t:
 #     if count == len(s):
-#         print("True") 
+#         print("True")
 #     if i == s[count]:
 #         count += 1
 # print(len(s) == count)
@@ -879,7 +879,7 @@
 #         count+=1
 # print(count==len(li2))
 
-#TODO: Two Sum
+# TODO: Two Sum
 
 # nums=[3,2,3]
 # target=6
@@ -903,16 +903,16 @@
 #             solution.append(sol)
 # print(solution[0])
 
-#TODO: Two SUM Another One Runtime(48 ms) O(n^2)
+# TODO: Two SUM Another One Runtime(48 ms) O(n^2)
 # nums=[3,2,3]
 # target=6
 # n=len(nums)
 # for i in range(0,n-1):
 #         for j in range(i+1, n):
 #             if((nums[i]+nums[j])==target):
-#                 print(list((i,j))) 
+#                 print(list((i,j)))
 
-#TODO: Create a maximum Number Leetcode(321)
+# TODO: Create a maximum Number Leetcode(321)
 # nums1 = [3, 4, 6, 5]
 # nums2 = [9, 1, 2, 5, 8, 3]
 # k = 5
@@ -921,7 +921,7 @@
 # nums1=list(set(nums1))
 # nums
 
-#TODO: Top K Frequent Elements
+# TODO: Top K Frequent Elements
 # nums = [1,1,1,2,2,3]
 # # nums1=list(set(nums))
 # k = 2
@@ -938,9 +938,9 @@
 # soln=[]
 # for i in soli.keys():
 #     soln.append(i)
-# print(soln[:k])   
+# print(soln[:k])
 
-#TODO:19. Remove Nth Node From End of List
+# TODO:19. Remove Nth Node From End of List
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
@@ -967,7 +967,7 @@
 #             ptr.next = None
 #             return head
 
-#TODO:21.Merge Two Sorted Lists
+# TODO:21.Merge Two Sorted Lists
 # class ListNode(object):
 #     def __init__(self, x):
 #         self.val = x
@@ -999,8 +999,8 @@
 #                 ptr = ptr.next
 #         return head.next
 
-#TODO: 274. H-Index.
-# According to the definition of h-index on Wikipedia: 
+# TODO: 274. H-Index.
+# According to the definition of h-index on Wikipedia:
 # "A scientist has index h if h of his/her N papers have at least h citations each, and the other N − h papers have no more than h citations each."
 # citations = [1]
 # citations.sort()
@@ -1051,7 +1051,7 @@
 
 # print(soln)
 
-#TODO: 219 Contains Duplicate II
+# TODO: 219 Contains Duplicate II
 # nums = [1,2,2,1]
 # k = 3
 # for i in range(0,len(nums)-1):
@@ -1067,11 +1067,11 @@
 # pagalist=["pagalworld","pagalworld.io","pagalworld.com","pagalworldwap.com",'.io','.com']
 # for i in strings:
 #     print(i.index("pagal"))
-    # for x in pagalist:
-    #     if(x in i):
-    #         z=i.replace(x,"")
-    #         newli.append(z.replace(" ",""))
-    #         # print(x)
+#     for x in pagalist:
+#         if(x in i):
+#             z=i.replace(x,"")
+#             newli.append(z.replace(" ",""))
+#             # print(x)
 # print(newli)
 
 # strings=["arjitsinghpagalworld.ae","sunidhipagalworld.io","bravesdevspagalworld.com","bravesdevsfreemusic.com"]
@@ -1096,7 +1096,7 @@
 # for i in num1li[-2:]:
 #     endstr+=i
 # if(int(endstr)>0):
-#     print(int(firststr)+1) 
+#     print(int(firststr)+1)
 # else:
 #     print(int(firststr))
 
@@ -1118,7 +1118,7 @@
 #     for i in range(len(a)-1):
 #         if((a[i]==k or a[i+1]==k) or (a[i]+a[i+1]==k)):
 #             summ+=1
-#     print(summ) 
+#     print(summ)
 
 
 # nums=[1,3,1]
@@ -1131,14 +1131,14 @@
 # for i in range(0,len(pairsli)):
 #     for j in range(0,len(pairsli[i])-1):
 #         distli.append(abs(pairsli[i][j]-pairsli[i][j+1]))
-    
+
 # print(min(distli))
 
-#Missing Number
+# Missing Number
 # nums = [3,0,1]
 # print(sum(range(0,len(nums)+1))-sum(nums))
 
-#Factorial Trailing Zeros
+# Factorial Trailing Zeros
 # import math
 # count=0
 # numsarr= [x for x in str(math.factorial(7))]
@@ -1150,16 +1150,16 @@
 # print(count)
 # # print(numsarr)
 
-#pow(x,n)
+# pow(x,n)
 # import math
 # print(round(math.pow(2.00000,10),5))
 
-#superpow
+# superpow
 # li=[4,3,3,8,5,2]
-# res = int("".join(map(str, li))) 
+# res = int("".join(map(str, li)))
 # print(1**res%1337)
 
-# nums = [4,5,6,7,0,1,2] 
+# nums = [4,5,6,7,0,1,2]
 # target = 0
 # if (target in nums):
 #     print(nums.index(target))
@@ -1173,7 +1173,8 @@
 
 # print(fib(2))
 
-#PASCAL TRIANGLE:
+
+# PASCAL TRIANGLE:
 # numRows=6
 # listnums=[[1]]
 # if(numRows<=1):
@@ -1184,11 +1185,32 @@
 #         num=str(num)
 #         numli=[int(x) for x in  num]
 #         listnums.append(numli)
-# return listnums 
+# return listnums
 
 
-#Add Binary
+# Add Binary
 # a=int(input())
 # b=int(input())
 # sumbin=bin(int(a,2) + int(b,2))
 # print(sumbin[2:])
+
+# nums = [-1,2,1,-4]
+# target = 1
+# # print(sum(nums[:3]))
+# def threeSumClosest(nums:List[int],target:int)->int:
+#     res = sum(nums[:3])
+
+# Integer to Roman
+
+def intToRoman(num: int) -> str:
+    lookup = {"I":1,"IV":4,"V":5,"IX":9,"X":10,"XL":40,"L":50,"XC":90,"C":100,"CD":400,"D":500,"CM":900,"M":1000}
+    output = []
+    for k,v in reversed(lookup.items()):
+        while num > 0:
+            if v <= num:
+                output.append(k)
+                num -= v
+            else:
+                break
+    return "".join(output)
+intToRoman(3)
