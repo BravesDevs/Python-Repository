@@ -1202,15 +1202,104 @@
 
 # Integer to Roman
 
-def intToRoman(num: int) -> str:
-    lookup = {"I":1,"IV":4,"V":5,"IX":9,"X":10,"XL":40,"L":50,"XC":90,"C":100,"CD":400,"D":500,"CM":900,"M":1000}
-    output = []
-    for k,v in reversed(lookup.items()):
-        while num > 0:
-            if v <= num:
-                output.append(k)
-                num -= v
-            else:
-                break
-    return "".join(output)
-intToRoman(3)
+# def intToRoman(num: int) -> str:
+#     lookup = {"I":1,"IV":4,"V":5,"IX":9,"X":10,"XL":40,"L":50,"XC":90,"C":100,"CD":400,"D":500,"CM":900,"M":1000}
+#     output = []
+#     for k,v in reversed(lookup.items()):
+#         while num > 0:
+#             if v <= num:
+#                 output.append(k)
+#                 num -= v
+#             else:
+#                 break
+#     return "".join(output)
+# intToRoman(3)
+
+# height = [1,8,6,2,5,4,8,3,7]
+# # print(len(height))
+# def maxArea(height: List[int]) -> int:
+#     res=0
+#     l, r = 0, len(height)-1
+#     while l < r:
+#         area = (r - l) * min(height[r], height[l])
+#         res = max(area,res)
+#         if(height[l] < height[r]):
+#             l+=1
+#         else:
+#             r-=1
+
+#     return res
+
+# print(maxArea((height)))
+
+#3-Sum Closest
+# def threeSumClosest(nums,target):
+#     nums.sort()
+#     res = sum(nums[:3])
+#     for i in range(len(nums)-2):
+#         s=i+1
+#         e=len(nums)-1
+
+#         while s<e:
+#             sumnum=nums[i]+nums[s]+nums[e]
+#             if(abs(sumnum-target)<abs(res-target)):
+#                 res = sumnum
+#             if sumnum<target:
+#                 s+=1
+#             else:
+#                 e-=1
+#         return res
+
+
+
+# print(threeSumClosest([-1,2,1,-4],1))
+# {:.2f}".format(a)
+# arr = [1,1,0,-1,-1]
+# unq=["{:.6f}".format(round(arr.count(int(x))/len(arr),2)) for x in list(set(arr))[::-1]]
+# print(unq)
+
+# Brute Force
+# num = 38
+# nums=[int(x) for x in str(num)]
+# while len(nums)>1:
+#     num = sum(nums)
+#     nums = [int(x) for x in str(num)]
+# print(num)
+
+# Using Recursion
+# class Solution:
+#     def sumNums(self,num:int)->int:
+#         nums = [int(x) for x in str(num)]
+#         if(len(nums)==1):
+#             return num
+#         else:
+#             num=sum(nums)
+#             return self.sumNums(num)
+        
+# soln = Solution()
+# print(soln.sumNums(38))
+# print(sumNums(38))
+
+# Excel Sheet Column title
+# import string
+
+# alpha_dict=dict(zip(string.ascii_uppercase,range(1,27)))
+# print(list(alpha_dict.keys())[2])
+# print(alpha_dict.values())
+
+# print(bin(3).replace("0b", ""))
+
+# class Solution:
+def countBits(n:int):
+    numLi=[]
+    for i in range(n+1):
+        countLi=[x for x in str(bin(i).replace("0b", ""))]
+        numLi.append(countLi.count('1'))
+    return numLi
+
+print(countBits(5))
+
+
+
+# soln = Solution()
+# print(soln.countBits(5))
